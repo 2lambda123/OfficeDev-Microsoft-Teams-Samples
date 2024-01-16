@@ -1,4 +1,5 @@
 using System.Net.Http.Headers;
+using Microsoft.Teams.Samples.AccountLinking.Models;
 
 namespace Microsoft.Teams.Samples.AccountLinking.GitHub;
 
@@ -34,7 +35,15 @@ public sealed class GitHubServiceClient
         var response = await _httpClient.SendAsync(request);
         _logger.LogInformation("Result: {code}", response.StatusCode);
 
-        response.EnsureSuccessStatusCode();
+        try
+        {
+            response.EnsureSuccessStatusCode();
+        }
+        catch (HttpRequestException ex)
+        {
+            _logger.LogError(ex, "Failed to get repositories");
+            throw;
+        }
 
         var content = await response.Content.ReadFromJsonAsync<ICollection<GitHubRepository>>();
         return content ?? throw new HttpRequestException("Failed to parse repositories");
@@ -50,6 +59,13 @@ public sealed class GitHubServiceClient
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", userAccessToken);
         var response = await _httpClient.SendAsync(request);
         _logger.LogInformation("Result: {code}", response.StatusCode);
+
+        response.EnsureSuccessStatusCode();
+
+        var content = await response.Content.ReadFromJsonAsync<GitHubUser>();
+        return content ?? throw new HttpRequestException("Failed to parse user");
+    }
+}
 
         response.EnsureSuccessStatusCode();
 
