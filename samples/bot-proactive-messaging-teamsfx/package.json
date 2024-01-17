@@ -16,7 +16,7 @@
         "restify": "^11.1.0"
     },
     "devDependencies": {
-        "@microsoft/teamsfx-cli": "0.*",
+        "@microsoft/teamsfx-cli": "2.*",
         "esbuild": "^0.18.1"
     },
     "license": "MIT"

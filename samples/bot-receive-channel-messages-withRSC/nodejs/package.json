@@ -22,7 +22,11 @@
     "body-parser": "^1.19.0",
     "botbuilder": "^4.21.4",
     "botframework-connector": "^4.21.4",
+<<<<<<< HEAD
     "botframework-schema": "^4.18.0",
+=======
+    "botframework-schema": "^4.21.4",
+>>>>>>> origin/main
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
