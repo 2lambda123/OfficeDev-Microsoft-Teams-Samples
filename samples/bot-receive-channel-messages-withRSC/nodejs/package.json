@@ -20,8 +20,8 @@
   "dependencies": {
     "@microsoft/microsoft-graph-client": "~2.0.0",
     "body-parser": "^1.19.0",
-    "botbuilder": "^4.18.0",
-    "botframework-connector": "^4.18.0",
+    "botbuilder": "^4.21.4",
+    "botframework-connector": "^4.21.4",
     "botframework-schema": "^4.18.0",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
