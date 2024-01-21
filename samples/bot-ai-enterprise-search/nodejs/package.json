@@ -23,7 +23,7 @@
     "dependencies": {
         "@azure/storage-blob": "^12.15.0",
         "@microsoft/adaptivecards-tools": "^1.0.0",
-         "botbuilder": "^4.17.0",
+         "botbuilder": "^4.21.4",
         "langchain": "^0.0.118",
         "pdf-parse": "^1.1.1",
         "redis": "^4.6.7",
