@@ -21,7 +21,7 @@
   "homepage": "https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-nodejs",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "botbuilder": "^4.18.0",
+    "botbuilder": "^4.22.1",
     "config": "^1.28.1",
     "core-js": "^2.6.11",
     "dotenv": "^8.2.0",
