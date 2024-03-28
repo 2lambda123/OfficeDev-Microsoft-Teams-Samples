@@ -23,7 +23,7 @@
     "botbuilder": "^4.21.4",
     "botbuilder-dialogs": "^4.21.4",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.19.2"
   },
   "devDependencies": {
     "eslint": "^7.0.0",
